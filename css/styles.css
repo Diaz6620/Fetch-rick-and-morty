@@ -75,6 +75,32 @@ table {
 ul {  
   padding-top: 100px;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.card {
+  padding: 5PX;
+  margin: 10px;
+  border: 1px solid rgb(184, 184, 184);
+  box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.75);
+}
+
+.card:hover, .boton:hover {
+  transform: scale(1.1);
+  transition: all .2s ease-in-out;
+}
+
+.boton:disabled {
+  background-color: #ccc;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+span {
+  font-weight: bold;
 }
 
 
